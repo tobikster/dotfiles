@@ -49,5 +49,6 @@ require('packer').startup(
 			end,
 		}
 		use 'ThePrimeagen/vim-be-good'
+		use 'tveskag/nvim-blame-line'
 	end
 )
