@@ -1,6 +1,9 @@
 vim.opt.compatible = false
 vim.opt.encoding = 'utf-8'
 
+-- Python provider
+vim.g.python3_host_prog = '$PYENV_ROOT/versions/py3nvim/bin/python3'
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -20,4 +23,3 @@ vim.opt.smarttab = true
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
-
