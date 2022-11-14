@@ -50,5 +50,9 @@ require('packer').startup(
 		}
 		use 'ThePrimeagen/vim-be-good'
 		use 'tveskag/nvim-blame-line'
+		use {
+			'nvim-lualine/lualine.nvim',
+			requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		}
 	end
 )
