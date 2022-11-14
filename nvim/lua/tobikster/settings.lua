@@ -23,3 +23,7 @@ vim.opt.smarttab = true
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
+
+-- More natural splits opening
+vim.opt.splitbelow = true
+vim.opt.splitright = true
