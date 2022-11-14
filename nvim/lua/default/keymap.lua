@@ -1,5 +1,5 @@
 -- It might be helpful in the future
-local nnoremap = require("tobikster.remap_helper").nnoremap
+local nnoremap = require("default.remap_helper").nnoremap
 
 -- Easier splits navigation
 nnoremap('<C-H>', '<C-W><C-H>')
