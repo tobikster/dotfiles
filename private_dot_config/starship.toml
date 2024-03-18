@@ -1,0 +1,61 @@
+# Timeout for commands executed by starship (in milliseconds)
+command_timeout = 1000
+
+format = """
+[](#9A348E)$username$hostname\
+[](bg:#DA627D fg:#9A348E)$directory\
+[](fg:#DA627D bg:#BD7051)$git_branch$git_status$git_commit\
+[](fg:#BD7051)
+$all\
+$character
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+style_user = "bg:#9A348E"
+style_root = "bg:#9A348E"
+format = '[$user]($style)'
+
+[hostname]
+style = "bg:#9A348E"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "bg:#DA627D"
+format = "[$path]($style)"
+truncation_length = 3
+fish_style_pwd_dir_length = 1
+
+[git_branch]
+symbol = ""
+style = "bg:#BD7051"
+format = '[[ $symbol $branch ](bg:#bd7051)]($style)'
+
+[git_commit]
+style = "bg:#BD7051"
+format = '[$tag]($style)'
+tag_disabled = false
+only_detached = true
+
+[git_status]
+style = "bg:#bd7051"
+format = '[[($all_status$ahead_behind)](bg:#bd7051)]($style)'
+
+[fill]
+symbol = " "
+
+[time]
+disabled = true
+time_format = "%R" # Hour:Minute Format
+style = "bg:#33658A"
+format = '[[$time](bg:#33658A)]($style)'
+
+[character]
+error_symbol = "[](bold red)"
+
+[sudo]
+disabled = false
+
